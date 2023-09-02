@@ -34,7 +34,7 @@ const loadCategoryWiseItems = async (categoryId) => {
 
 // Sort by view
 const sortByViews = () => {
-    sortedData = sortedItems[0].sort((a, b) => parseFloat(b.others.views) - parseFloat(a.others.views));
+    let sortedData = sortedItems[0].sort((a, b) => parseFloat(b.others.views) - parseFloat(a.others.views));
     displayCategoryWiseItems(sortedData);
 };
 
