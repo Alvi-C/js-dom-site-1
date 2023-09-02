@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH TUBE</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="container mx-auto">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <a href="./index.html">
+                    <img class="w-24 lg:w-32" src="./assets/img/Logo.png" alt="">
+                </a>
+            </div>
+            <div class="navbar-center">
+                <button class="bg-gray-200 rounded-md px-4 py-1 hover:bg-gray-300">
+                    <a href="./index.html">Home</a>
+                </button>
+            </div>
+            <div class="navbar-end">
+                <button class="bg-gray-200 rounded-md px-4 py-1 hover:bg-gray-300">
+                    <a href="./blog.html">Blog</a>
+                </button>
+            </div>
+        </div>
+        <hr class="bg-gray-100 h-0.5 w-[95%] md:w-[98%] lg:w-[100%] mx-auto">
+    </header>
+
+    <main class="container mx-auto">
+        <section>
+            <div class=" flex flex-col items-center px-5 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                <div class="flex flex-col w-full max-w-3xl mx-auto text-left">
+                    <div class="w-full mx-auto text-justify my-10">
+                        <h2 class="text-2xl font-bold mb-3">
+                            Discuss the scope of var, let, and const
+                        </h2>
+                        <p class="mb-5">
+                            <span class="font-bold">Var :</span> <br>
+                            <span class="font-bold">Function Scope:</span> Variables declared with var are
+                            function-scoped. This means they are only accessible within the function
+                            in which they are declared. If a variable is declared within a block (e.g., an if statement
+                            or loop), it is still accessible throughout the entire function. <br>
+                            <span class="font-bold">Hoisting:</span> Variables declared with var are hoisted to the top
+                            of their containing function or global scope. This means you can access and use a var
+                            variable before it's declared in your code, although the value
+                            will be undefined until the assignment is reached.
+                        </p>
+                        <p class="mb-5">
+                            <span class="font-bold">Let :</span> <br>
+                            <span class="font-bold">Block Scope:</span> Like let, variables declared with const are
+                            block-scoped, and their scope is limited to the block in which they are
+                            defined. <br>
+                            <span class="font-bold">No Hoisting:</span> Unlike var, variables declared with let are not
+                            hoisted. They are only accessible after they have been declared in the
+                            code. Trying to access a let variable before its declaration will result in a
+                            ReferenceError.
+                        </p>
+                        <p class="mb-5">
+                            <span class="font-bold">Const :</span> <br>
+                            <span class="font-bold">Function Scope:</span> Variables declared with var are
+                            function-scoped. This means they are only accessible within the function
+                            in which they are declared. If a variable is declared within a block (e.g., an if statement
+                            or loop), it is still accessible throughout the entire function. <br>
+                            <span class="font-bold">Constant Value:</span> Variables declared with const are constant,
+                            meaning their value cannot be reassigned after initialization. However, for
+                            objects and arrays declared with const, their properties or elements can still be modified.
+                            <br>
+                            <span class="font-bold">No Hoisting:</span> Like let, const variables are not hoisted, and
+                            they must be declared before they are used.
+                        </p>
+                    </div>
+                    <div class="w-full mx-auto text-justify mb-10">
+                        <h2 class="text-2xl font-bold mb-3">
+                            Tell us the use cases of null and undefined
+                        </h2>
+                        <p>
+                            <span class="font-bold">Null :</span> It is the intentional absence of the value. It is one
+                            of the primitive values of JavaScript.<br>
+                            <span class="font-bold">Undefined :</span> undefined is a primitive value automatically
+                            assigned by JavaScript
+                            to indicate the unintentional absence of any object
+                            value.
+
+                        </p>
+
+                    </div>
+                    <div class="w-full mx-auto text-justify mb-10">
+                        <h2 class="text-2xl font-bold mb-3">
+                            What do you mean by REST API?
+                        </h2>
+                        <p>
+                            A REST API is an architectural style for an application program interface (API) that uses
+                            HTTP requests to access and
+                            use data. That data can be used to GET, PUT, POST and DELETE data types, which refers to the
+                            reading, updating, creating
+                            and deleting of operations concerning resources.
+
+                            An API for a website is code that allows two software programs to communicate with each
+                            other. The API spells out the
+                            proper way for a developer to write a program requesting services from an operating system
+                            or other application.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

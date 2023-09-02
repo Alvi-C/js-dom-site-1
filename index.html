@@ -14,20 +14,29 @@
     <header class="container mx-auto">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
-                <img class="w-24 lg:w-32" src="./assets/image/Logo.png" alt="">
+                <a href="./index.html">
+                    <img class="w-24 lg:w-32" src="./assets/img/Logo.png" alt="">
+                </a>
             </div>
             <div class="navbar-center">
-                <button class="bg-gray-200 rounded-md px-4 py-1 hover:bg-gray-300">Sort by view</button>
+                <button id="sort-by-view" class="bg-gray-200 rounded-md px-4 py-1 hover:bg-gray-300">Sort by
+                    view
+                </button>
             </div>
             <div class="navbar-end">
-                <button class="bg-gray-200 rounded-md px-4 py-1 hover:bg-gray-300">Blog</button>
+                <button class="bg-red-600 text-white rounded-md px-4 py-1 hover:bg-red-500 ">
+                    <a href="./blog.html">Blog</a>
+                </button>
             </div>
         </div>
         <hr class="bg-gray-100 h-0.5 w-[95%] md:w-[98%] lg:w-[100%] mx-auto">
     </header>
 
-    <main>
-
+    <main class="container mx-auto">
+        <!-- Category menu -->
+        <div id="category-menu" class="flex flex-grow items-center justify-center my-8 space-x-5"></div>
+        <!-- Display category items -->
+        <div id="category-items"></div>
     </main>
 
 
